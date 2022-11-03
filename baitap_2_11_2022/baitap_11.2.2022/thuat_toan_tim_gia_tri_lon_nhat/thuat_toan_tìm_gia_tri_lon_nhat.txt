@@ -1,0 +1,11 @@
+Begin
+Input a,b, c
+max = a
+if b > max 
+ then max = b
+end if
+
+if  c > max
+ max= c
+end if
+display max 

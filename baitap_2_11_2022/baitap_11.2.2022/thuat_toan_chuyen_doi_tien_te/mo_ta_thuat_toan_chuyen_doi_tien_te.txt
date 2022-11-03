@@ -1,0 +1,5 @@
+Begin
+  Input a
+  v = a * 23000
+  Display v
+End

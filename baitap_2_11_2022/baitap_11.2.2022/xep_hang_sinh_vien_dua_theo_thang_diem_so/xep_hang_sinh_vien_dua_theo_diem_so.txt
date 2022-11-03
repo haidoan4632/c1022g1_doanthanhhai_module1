@@ -1,0 +1,15 @@
+begin 
+a >= 0;
+input a
+if (75 <= a <= 100) 
+  display "Loại A"
+else if (60 <= a < 75)
+  display "Loại B"
+else if (45 <= a < 60)
+  display "Loại C"
+else if (35 <= a < 45)
+  display "Loại D"
+else if (0 <= a < 35)
+  display ("Loại E")
+else 
+  display ("nhập sai")
