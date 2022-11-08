@@ -1,0 +1,15 @@
+table{
+    border-bottom-color: aqua;
+    border: ;
+}
+th{
+    text-align: center;
+    background-color: whitesmoke;
+}
+div{
+    border-width: 3px;
+    border-style: solid;
+    width: 400px;
+    height: 300px;
+    border-color: aqua;
+}
