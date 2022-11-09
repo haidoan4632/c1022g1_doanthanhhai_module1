@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_5</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('nhập điểm kiểm tra'))
+    let b = parseInt(prompt('nhập điểm kiểm tra giữa kỳ'))
+    let c = parseInt(prompt('nhập điểm kiểm tra cuối kỳ'))
+    let diemTong = (a*2 + b*2 +c*6)/10;
+    if( diemTong >= 8.5){
+        alert('Học sinh giỏi')
+    }
+    else if (6.5 <= diemTong <8.5 ){
+        alert('Học sinh khá')
+    }
+    else if( 5<= diemTong <6.5){
+        alert('Học sinh trung bình')
+    }
+    else {
+        alert('Học lại')
+    }
+</script>
+</body>
+</html>
+<!--xếp hạng học lực của học sinh dựa trên các điểm kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ-->
