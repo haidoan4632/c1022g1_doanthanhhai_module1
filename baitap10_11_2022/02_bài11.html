@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai11</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Nhập giá trị thu nhập của bản thân');
+    let c ;
+    if ( a>0 && a<5 ) {
+        let c = a * 5 / 100 ;
+        alert ('số thuế phải nộp : ' + c + 'triệu đồng'  )
+    }
+    else if (a>5 && a<=10 ) {
+        let c = a/10 - 0.25 ;
+        alert ('số thuế phải nộp : ' + c + 'triệu đồng'  )
+    }
+    else if ( a>10 && a<=18 ) {
+        let c = a * 0.15 - 0.75 ;
+        alert ('số thuế phải nộp : ' + c + 'triệu đồng'  )
+    } else if  ( a>18 && a<=32 ) {
+        let c = a * 0.2-1.65 ;
+        alert ('số thuế phải nộp : ' + c + 'triệu đồng'  )
+    } else if   ( a>32 && a<=52 ) {
+        let c = a*0.25-3.25 ;
+        alert ('số thuế phải nộp : ' + c + 'triệu đồng'  )
+    }else if   ( a>52 && a<=80 ) {
+        let c = a * 0.3 - 5.85;
+        alert('số thuế phải nộp : ' + c + 'triệu đồng')
+    }else if   (a>80) {
+        let c = a * 0.35 - 9.85;
+        alert('số thuế phải nộp : ' + c + 'triệu đồng')
+    }
+</script>
+</body>
+</html>

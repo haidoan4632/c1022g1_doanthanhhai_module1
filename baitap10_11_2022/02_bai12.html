@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai12</title>
+</head>
+<body>
+<!--<table>-->
+<!--    <tr>-->
+<!--        <td><p> Số tiền vay :  </p></td>-->
+<!--        <td><input type="text"  id="abc"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><p> Lãi suất / năm :  </p></td>-->
+<!--        <td><input type="text"  id="xyz" ></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><p> Số tháng vay : </p></td>-->
+<!--        <td><input type="text"  id="phe"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><button onclick="submit()"  >submit</button></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><p id="result"></p></td>-->
+
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><p id="result2"></p></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><p id="result3" ></p></td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--<script>-->
+<!--    function submit() {-->
+<!--        let  a = +document.getElementById ('abc').value;-->
+<!--        let  b = +document.getElementById ('xyz').value;-->
+<!--        let  c = +document.getElementById ('phe').value;-->
+
+<!--        let d = a / c ;-->
+<!--        document.getElementById("result").innerHTML = 'Số tiền gốc phải trả ngân hàng là: ' + d  + ' triệu đồng' ;-->
+
+<!--        let e = (a * b/100) *1000 / c ;-->
+<!--        document.getElementById("result2").innerHTML = 'số lãi phải trả ngân hàng là: ' + e + ' ngàn đồng';-->
+
+<!--        let f = d + e;-->
+<!--        document.getElementById("result3").innerHTML = 'số tiền phải trả hằng tháng là: ' + f  + ' triệu đồng' ;-->
+
+<!--    }-->
+<label for="tienvay">Nhập vào số tiền vay gốc</label>
+<input type="number" id="tienvay">  <br><br>
+
+
+<label for="thangvay">Nhập vào số tháng cho vay</label>
+<input type="number" id="thangvay"  ><br><br>
+
+
+<tr>
+    <td><button onclick="kiem_tra()">Hiển thị </button> </td>
+    <br>
+    <p id="123"></p>
+<script>
+    function kiem_tra() {
+        let a = +document.getElementById("tienvay").value;
+        let c = +document.getElementById("thangvay").value;
+        let d;
+        // let e = d*c = document.getElementById("123").value;
+        if (c == 1) {
+             d = a * 0.0069 + a / c;
+            alert('số tiền phải trả cả gốc lẫn lãi trong một tháng: ' + d + 'triệu đồng')
+        } else if (c == 2) {
+             d = a * 0.0071 + a / c;
+            alert('số tiền phải trả cả gốc lẫn lãi trong một tháng: ' + d + 'triệu đồng')
+        } else if (c >= 3) {
+             d = a * 0.009 + a / c;
+            alert('số tiền phải trả cả gốc lẫn lãi trong một tháng: ' + d + 'triệu đồng')
+        }
+
+
+        document.getElementById("123").innerHTML = d * c;
+    }
+
+
+
+
+</script>
+</body>
+</html>
+
+<!--input:-->
+<!--số tiền ban đầu a 10 triệu-->
+<!--số tháng cho vay b :-->
+<!--tháng 1: d-->
+<!--tháng 2 e-->
+<!--tháng 3 f-->
+<!--tháng 4 g-->
+<!--lãi xuất hàng tháng c-->
+<!--&ndash;&gt; tổng lãi sau số tháng ?-->
