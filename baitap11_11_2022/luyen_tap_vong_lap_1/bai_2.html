@@ -1,0 +1,49 @@
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>bai_2</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<script>-->
+<!--    let nhietdo = +(prompt("Nhập vào nhiệt độ"))-->
+<!--    while (nhietdo<20 || nhietdo>100){-->
+<!--        if(nhietdo<20){-->
+<!--            alert("yêu cầu người dùng tăng nhiệt độ")-->
+<!--            nhietdo = +(prompt("Nhập vào nhiệt độ"))-->
+<!--        }else if(nhietdo>100){-->
+<!--            alert("yêu cầu người dùng giảm nhiệt độ")-->
+<!--            nhietdo = +(prompt("Nhập vào nhiệt độ"))-->
+<!--        }-->
+<!--    }-->
+<!--    alert("Nhiệt độ là "+ nhietdo + "độ C")-->
+
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_2</title>
+</head>
+<body>
+<script>
+    nhietDo = null;
+    do {
+        nhietDo = +prompt("nhập nhiệt độ hiện tại: ");
+        if (nhietDo <20){
+            alert("cần tăng nhiệt độ ");
+        }else if (nhietDo > 100){
+            alert('cần giảm nhiệt độ: ');
+        } else document.write(nhietDo)
+
+    } while (nhietDo >100 || nhietDo <20 )
+    alert('nhiệt độ hiện tại là: ' + nhietDo)
+</script>
+</body>
+</html>
+
+

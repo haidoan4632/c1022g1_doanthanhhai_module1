@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fibonacci</title>
+</head>
+<body>
+<p id="aaa"></p>
+<script>
+    let a = 0;
+    let b =1;
+    let c;
+    let tong = 1;
+    for ( let i = 0; i <= 17;i++){
+        c = a+b;
+        a = b;
+        b =c;
+        tong += c
+    }
+    document.getElementById('aaa').innerHTML = tong;
+</script>
+</body>
+</html>
