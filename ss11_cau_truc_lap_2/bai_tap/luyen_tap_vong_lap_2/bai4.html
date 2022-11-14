@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In hình chữ nhật</title>
+</head>
+<body>
+
+<script>
+    let m = +prompt('nhập chiều rộng');
+    let n = +prompt('nhập chiều dài');
+    for (let i = 1; i <= m; i++) {
+        for (let j = 1; j <= n; j++) {
+            if(i==1||j==1||j==n||i==m) {
+                document.write('*')
+            }
+            else {document.write('&nbsp&nbsp;')}
+        }
+        document.write('<br>')
+
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="ketqua"></p>
+<script>
+
+    let a, i, j;
+    a = "<table border='2' width='300' cellspacing='1' >";
+    for (i = 1; i < 10; i++) {
+        a = a + "<tr>";
+        for (j = 1; j < 10; j++) {
+            a = a + "<td>" + j + "*" + i + "=" + i * j + "</td>";
+        }
+        a = a + "</tr>";
+    }
+    a = a + "</table>";
+    document.write(a);
+
+</script>
+</body>
+</html>

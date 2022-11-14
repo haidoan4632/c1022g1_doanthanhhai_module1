@@ -1,0 +1,86 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>in tam giác vuông, các góc vuông nằm ở các vị trí khác nhau</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<script>-->
+
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<h3>In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau</h3>
+<h4>Hình 1</h4>
+<div id="hinh1"></div>
+<h4>Hình 2</h4>
+<div id="hinh2"></div>
+<h4>Hình 3</h4>
+<div id="hinh3"></div>
+<h4>Hình 4</h4>
+<div id="hinh4"></div>
+<style>
+    #hinh3{
+        margin-right: ;
+    }
+</style>
+<script>
+    let i,j;
+    let result ='';
+    for (i=1;i<=5;i++) {
+        for (j = 1; j <= i; j++) {
+            result+= '*';
+
+            document.getElementById('hinh1').innerHTML = result;
+        }
+        result +='<br>'
+    }
+    result ='';
+    for(i=1;i<=5;i++){
+        for(j=5;j>=i;j--){
+            result+= '*';
+
+            document.getElementById('hinh2').innerHTML = result;
+        }
+        result +='<br>'
+    }
+    result ='';
+
+    for (i=1;i<=5;i++) {
+    for (let k = 5;i<=k;k--){
+        result += '&ensp;'
+    }
+        for (j = 1; j <= i; j++) {
+            result+= '*';
+
+            document.getElementById('hinh3').innerHTML = result;
+        }
+        result +='<br>'
+    }
+    result ='';
+    for(i=1;i<=5;i++) {
+        for (let k = 1;k<=i;k++) {
+            result += '&ensp;'
+        }
+        for (j = 5; j >= i; j--) {
+            result += '*';
+
+            document.getElementById('hinh4').innerHTML = result;
+        }
+        result += '<br>'
+    }
+
+
+
+
+</script>
+</body>
+</html>

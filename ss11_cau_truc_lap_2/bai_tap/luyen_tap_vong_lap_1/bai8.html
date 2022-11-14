@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+</head>
+<body>
+<button onclick="gamedoanso()">Chơi</button>
+
+<script>
+    function gamedoanso() {
+        min = +prompt("Nhập giá trị min: ");
+        max = +prompt("Nhập giá trị max");
+        for (a = 1; a <= 5; a++) {
+            b = +prompt("nhập số dự đoán: ");
+            c = Math.floor(Math.random() * max) + min;
+            if (c == b) {
+                alert("Chúc mừng");
+                break;
+            } else {
+                if (c>b ) {
+                    alert("Lớn hơn giá trị nhập vào")
+                } else {
+                    alert("Nhỏ hơn giá trị nhập vào")
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
