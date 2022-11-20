@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<script>
+    let a = +prompt("số phần tử của mảng");
+    let b=[]
+    let max = 0
+    let avg = 0
+    for ( let i = 0; i < a; i++){
+        b = +prompt("Nhập phần tử mảng");
+        if(max<b){
+            max=b
+        }
+        avg += b
+    }
+    avg = avg / a
+    document.write("Giá trị lớn nhất là: " + max + "<br>" + "Giá trị trung bình của các phần tử là: " + avg)
+</script>
+</body>
+</html>

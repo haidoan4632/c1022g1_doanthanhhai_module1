@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+
+<script>
+    let a =[]
+    let b =+prompt('số phần tử cần nhập')
+    let dem = 0;
+    for (let i = 0;i<b;i++) {
+        a[i] = +prompt('nhập value');
+        if(a[i]<0){
+        document.writeln( a[i])
+        dem++;
+    }}
+    document.write('số nguyên âm có trong mảng là:'+ dem)
+</script>
+</body>
+</html>

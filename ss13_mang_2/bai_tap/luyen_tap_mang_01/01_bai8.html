@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 8</title>
+</head>
+<body>
+
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt('Nhập giá trị mảng ');
+    }
+    document.write(arr + '<br>');
+    arr.sort(function (a, b) {
+        return b - a;
+    })
+    document.write(arr);
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<div id="bai1"></div>
+<div id="test"></div>
+<script>
+    let i;
+    let e=0;
+    let arr=[];
+    let result='';
+    for (i=1;i<11;i++){
+        arr[i]=prompt('Nhập số thứ '+i)
+        if (arr[i]>=10){
+            e+=1;
+            result=result+arr[i].toString() + '<br>'
+        }
+    }
+    document.getElementById('bai1').innerHTML='Có '+e+' số lớn hơn hoặc bằng 10 là: '
+    document.getElementById('test').innerHTML=result;
+</script>
+</body>
+</html>

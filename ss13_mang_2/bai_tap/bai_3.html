@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<div id="abc"></div>
+<script>
+   let a =prompt('nhập chuỗi');
+   let i;
+   let result='';
+   for (i=0;i<a.length;i++){
+       if (a[i]===a[i].toUpperCase()){
+           result=result+a[i].toLowerCase();
+       }
+       else result=result+a[i].toUpperCase();
+   }
+ document.getElementById('abc').innerHTML = result;
+</script>
+</body>
+</html>

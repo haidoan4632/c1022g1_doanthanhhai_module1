@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 7</title>
+</head>
+<body>
+
+<script>
+    let a=[]
+    let b =+prompt('số phần tử cần nhập')
+    let v
+    for (let i=0;i<b;i++){
+        a[i] =+prompt('nhập value')
+    }
+    v=+prompt('nhập vào value của v')
+    for (let i=0;i<b;i++){
+        if (a[i] == v) {
+            a.splice(i, 1,0);
+    }
+        document.write(a[i]);
+    }
+
+
+</script>
+</body>
+</html>

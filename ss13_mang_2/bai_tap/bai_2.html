@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+    var a = +prompt();
+    var b = a.toString();
+    var result = [b[0]];
+
+    for(let i=1; i<b.length; i++)
+    {
+        if((b[i-1]%2 === 0)&&(b[i]%2 === 0))
+        {
+            result.push('-', b[i]);
+        }
+        else
+        {
+            result.push(b[i]);
+        }
+    }
+    console.log(result.join(''));
+
+
+
+</script>
+</body>
+</html>

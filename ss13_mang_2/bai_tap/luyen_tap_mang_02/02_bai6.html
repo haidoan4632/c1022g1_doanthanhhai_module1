@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 6</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = +prompt('số phần tử của mảng')
+    for (let i = 0; i < b; i++) {
+        a[i] = prompt('Nhập phần tử thứ ' + i);
+        if (a[i] == '-') {
+            a.splice(i, 1, '_')
+        }
+    }
+    document.write(a.join(''))
+</script>
+</body>
+</html>
