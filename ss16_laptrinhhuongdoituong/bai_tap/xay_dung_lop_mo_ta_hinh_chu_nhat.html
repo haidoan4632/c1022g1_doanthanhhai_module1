@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xay dung lop mo ta hinh chu nhat</title>
+</head>
+<body>
+<canvas id="DemoCanvas"></canvas><br>
+<script>
+    class Rectangle {
+        constructor(chieuDai, chieuRong) {
+            this.chieuDai = chieuDai;
+            this.chieuRong = chieuRong;
+        }
+
+        dienTich() {
+            return this.chieuRong * this.chieuDai;
+        }
+
+        chuVi() {
+            return (this.chieuRong + this.chieuDai) * 2;
+        }
+
+    }
+
+    let rectangleObj = new Rectangle(12, 15);
+    rectangleObj.chieuDai = 100;
+    rectangleObj.chieuRong = 300;
+    let chieuDai = rectangleObj.chieuDai;
+    let chieuRong = rectangleObj.chieuRong;
+    document.write("Chiều rộng là: "+ rectangleObj.chieuRong + "(int)" + "<br>");
+    document.write("Chiều rộng là: "+ rectangleObj.chieuDai + "(int)" + "<br>");
+    document.write("Diện tích là : " + rectangleObj.dienTich() + "(int)" + "<br>");
+    document.write("Chu vi là : " + rectangleObj.chuVi()+ "(int)");
+    let canvas = document.getElementById("DemoCanvas");
+    let ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#2afa2d';
+    ctx.fillRect(20, 30, chieuRong, chieuDai);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 9</title>
+</head>
+<body>
+<script>
+    function abc() {
+        let arr = [];
+        let n = +prompt('nhập số phần tử trong mảng')
+        for (let i = 0; i < n; i++) {
+            arr[i] = +prompt('nhập các phần tử của mảng')
+        }
+        console.log(arr)
+        v = +prompt('nhập vào 1 ký tự bất kỳ')
+        c = arr.indexOf(v);
+        let count = 0
+        if (c != -1) {
+            for (let j = 0; j < arr.length; j++) {
+
+                if (arr[j] == v) {
+                    count++
+
+                }
+            }alert('số lần xuất hiện của ' + v + ' là ' + count)
+
+        } else {
+            alert("-1")
+        }
+    }
+
+    abc()
+</script>
+</body>
+</html>
