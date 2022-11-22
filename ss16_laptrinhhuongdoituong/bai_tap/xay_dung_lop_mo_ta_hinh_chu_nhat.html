@@ -5,37 +5,35 @@
     <title>xay dung lop mo ta hinh chu nhat</title>
 </head>
 <body>
-<canvas id="DemoCanvas"></canvas><br>
+<canvas id="canvasObjectHTML" width="700" height="800"></canvas>
 <script>
+    let canvasObj = document.getElementById("canvasObjectHTML");
+    let ctx = canvasObj.getContext("2d");
+    ctx.rect(200, 200, 200, 150);
+    ctx.strokeStyle = "red";
+    ctx.stroke();
+    ctx.fillStyle = 'yellow';
+    ctx.fill();
+
+
     class Rectangle {
         constructor(chieuDai, chieuRong) {
             this.chieuDai = chieuDai;
             this.chieuRong = chieuRong;
         }
 
-        dienTich() {
-            return this.chieuRong * this.chieuDai;
+        Area() {
+            document.write("Diện tích hình chữ nhật là : " + this.chieuRong * this.chieuDai + "(int)"+"<br>");
         }
-
-        chuVi() {
-            return (this.chieuRong + this.chieuDai) * 2;
+        Perimeter() {
+            document.write("Chu vi hình chữ nhật là : " + (this.chieuRong + this.chieuDai) * 2 + "(int)");
         }
-
     }
+    let rec = new Rectangle(200, 150)
+    rec.Area();
+    rec.Perimeter()
 
-    let rectangleObj = new Rectangle(12, 15);
-    rectangleObj.chieuDai = 100;
-    rectangleObj.chieuRong = 300;
-    let chieuDai = rectangleObj.chieuDai;
-    let chieuRong = rectangleObj.chieuRong;
-    document.write("Chiều rộng là: "+ rectangleObj.chieuRong + "(int)" + "<br>");
-    document.write("Chiều rộng là: "+ rectangleObj.chieuDai + "(int)" + "<br>");
-    document.write("Diện tích là : " + rectangleObj.dienTich() + "(int)" + "<br>");
-    document.write("Chu vi là : " + rectangleObj.chuVi()+ "(int)");
-    let canvas = document.getElementById("DemoCanvas");
-    let ctx = canvas.getContext('2d');
-    ctx.fillStyle = '#2afa2d';
-    ctx.fillRect(20, 30, chieuRong, chieuDai);
+
 </script>
 
 </body>

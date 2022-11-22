@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>temperature</title>
+</head>
+<body>
+<script>
+
+
+    class Temperature {
+        constructor(C, F, Kelvin) {
+            this.C = C;
+            this.F = F;
+            this.Kelvin = Kelvin;
+        }
+
+        doC() {
+            console.log(`Nhiệt độ hiện tại : ${this.C} độ C`);
+        }
+
+        doF() {
+            console.log(
+                `Chuyển nhiệt độ từ độ C sang độ F  : ${this.C * 9 / 5 + 32} độ F`
+            );
+        }
+
+        doKelvin() {
+            console.log(
+                `Chuyển nhiệt độ từ độ C sang độ Kelvin : ${this.C + 237.15} độ Kelvin`
+            );
+        }
+    }
+
+    let result = new Temperature(25, 0, 0);
+
+    result.doC();
+    result.doF();
+    result.doKelvin();
+</script>
+</body>
+</html>
