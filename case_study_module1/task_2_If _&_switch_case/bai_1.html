@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 1</title>
+</head>
+<body>
+<script>
+    let thue;
+    let luongRong;
+    let luong = +prompt('nhập lương nhân viên');
+    if(luong>=15){
+        thue=luong*20/100;
+        luongRong=luong-thue;
+        +prompt('thuế '+thue + 'triệu');
+        +prompt('lương ròng '+luongRong + 'triệu');
+    }
+    else if(luong>7&&luong<15){
+        thue=luong*10/100;
+        luongRong=luong-thue;
+        +prompt('thuế '+thue + 'triệu');
+        +prompt('lương ròng '+luongRong + 'triệu');
+
+    }
+    else if(luong<7){
+        thue=luong*5/100;
+        luongRong=luong-thue;
+        +prompt('thuế '+thue + 'triệu');
+        +prompt('lương ròng '+luongRong + 'triệu');
+    }
+</script>
+</body>
+</html>
+<!--Viết một chương trình để nhập lương nhân viên, tính thuế thu nhập và lương ròng (số tiền lương thực sự mà nhân viên đó nhận được). Với các thông số giả sử như sau (không theo luật lương, chỉ là con số giả sử để dễ tính toán):-->
+<!--20% thuế thu nhập nếu lương là 15 triệu.-->
+<!--10% thuế thu nhập nếu lương từ 7 đến 15 triệu.-->
+<!--5% thuế thu nhập nếu lương dưới 7 triệu-->

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 1</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    let c = 0;
+
+    let n = +prompt('nhập tổng số phần tử tong mảng a');
+    for (let i = 0; i < n; i++) {
+        a[i] = +prompt('nhập các giá trị của mảng a');
+        for (let j = 0; j <= i; j++) {
+            c += a[j]
+        }
+        b.push(c)
+        c=0;
+    }
+    +prompt(b);
+
+</script>
+</body>
+</html>

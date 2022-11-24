@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+let a=[];
+let b=[];
+let d=[];
+let c;
+let n = +prompt('nhập số phần tử trong mảng');
+    for (let i =0; i<n;i++ ){
+        a[i] = +prompt('nhập các phần tử mảng a');}
+let m = +prompt('nhập số phần tử trong mảng');
+for (let i =0; i<m;i++ ){
+        b[i] = +prompt('nhập số phần tử mảng b');
+    c= a.indexOf(b[i]);
+        if(c ==-1){
+           d.push(b[i])
+        }
+
+    }
+document.write(d)
+
+</script>
+</body>
+</html>

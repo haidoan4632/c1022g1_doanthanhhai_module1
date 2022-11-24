@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<script>
+    let numerators = [];
+    let denominators = [];
+    let n = +prompt('nhập số phần tử');
+    let fraction;
+    let max = 0;
+    let viTri;
+    for (let i = 0; i < n; i++) {
+        numerators[i] = +prompt('nhập số phần tử của mảng a')
+    }
+    for (let i = 0; i < n; i++) {
+        denominators[i] = +prompt('nhập số phần tử của mảng b')}
+    for (let i = 0; i < n; i++) {
+        if((numerators[i] / denominators[i])>max){
+            max = numerators[i] / denominators[i];
+           viTri = i;
+            fraction =  numerators[i] + '/'+denominators[i];
+        }
+
+    }
+document.write(fraction + " tai vi tri "+viTri);
+</script>
+</body>
+</html>
