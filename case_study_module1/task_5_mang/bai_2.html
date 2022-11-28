@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+    let arr =[];
+    let m= +prompt('nhập số lượng mảng con trong mảng mẹ');
+    let n= + prompt('nhập số phần tử của mảng con');
+    for(let i=0;i<m;i++){
+        arr[i]=[]
+        for (let j=0;j<n;j++){
+            arr[i][j] = +prompt('nhập giá trị của phần tử tại vị trí [i][j]');
+
+        }
+    }
+    console.log(arr)
+    function prime(n) {
+       let flag =1;
+       if(n<2) return flag = 0;
+       let i=2;
+       while (i<n){
+           if(n%i==0){
+               flag=0;
+               break;
+           }
+           i++;
+       }
+return  flag;
+    }
+    for (let i=0;i<arr.length;i++){
+        if(prime(arr[i])==1) result.push(arr[i]);
+    }
+    document.write(result +'<br>');
+
+
+</script>
+</body>
+</html>

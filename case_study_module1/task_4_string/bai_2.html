@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+
+<script>
+    let newStr = [];
+    let dem = 0;
+    let newStr1 = [];
+    let nhap = prompt('nhập vào 1 xâu kí tự')
+    console.log(nhap);
+    newStr = nhap.split('');
+    console.log(newStr);
+    for (let i = 0; i < newStr.length; i++) {
+        if (newStr1.includes(newStr[i]) == false)
+            newStr1.push(newStr[i]);
+    }
+    console.log(newStr1);
+    console.log(newStr1.length)
+</script>
+</body>
+</html>

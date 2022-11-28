@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<button onclick="maxx()">nhập giá trị max</button>
+
+<button onclick="minn()">nhập giá trị min</button>
+<script>
+
+    function maxx() {
+        let arr = [];
+        let m = +prompt('nhập giá trị m');
+        let n = +prompt('nhập giá trị n');
+        for (let i = 0; i < m; i++) {
+            arr[i] = []
+            for (let j = 0; j < n; j++) {
+                arr[i][j] = +prompt('nhập giá trị');
+                let max = arr[0][0];
+                if (arr[i][j] > max) {
+                    max = arr[i][j]
+                }
+                alert(max);
+            }
+        }
+
+    }
+
+    function minn() {
+        let arr = [];
+        let m = +prompt('nhập giá trị m');
+        let n = +prompt('nhập giá trị n');
+        for (let i = 0; i < m; i++) {
+            arr[i] = []
+            for (let j = 0; j < n; j++) {
+                arr[i][j] = +prompt('nhập giá trị');
+                let min = arr[0][0];
+                if (arr[i][j] < min) {
+                    min = arr[i][j]
+
+                }
+                alert(min);
+            }
+        }
+        // alert(min); em đặt alert() ở vị trí này nó sai, em chưa hiểu tới anh?
+    }
+</script>
+</body>
+</html>

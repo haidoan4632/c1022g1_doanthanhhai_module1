@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_1</title>
+</head>
+<body>
+<button onclick="kiem_tra()">nhập chuỗi</button>
+
+<script>
+
+function kiem_tra() {
+    let string = prompt("nhập vào 1 chuỗi ký tự");
+    let arr = []
+    let arr1 = [];
+    let thuong = string.toLocaleLowerCase();
+
+    alert(thuong);
+    arr = thuong.split(' ')
+    alert(arr)
+    console.log(arr)
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === '') {
+            arr.splice(i, 1)
+            i = i - 1;
+        }
+    }
+
+    for (let j = 0; j < arr.length; j++) {
+        if (arr[j] !== "") {
+            arr[j] = arr[j][0].toUpperCase() + arr[j].slice(1);
+        }
+    }
+    arr1 = arr.join(" ");
+    alert(arr1)
+}
+
+
+</script>
+</body>
+</html>

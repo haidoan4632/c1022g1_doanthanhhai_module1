@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<script>
+    let arr =[];
+    let xau1 = prompt('nhập xâu kí tự 1');
+    console.log(xau1);
+    let xau2 = prompt('nhập xâu kí tự 2');
+    console.log(xau2);
+    let arr1 = xau1.split('');
+    console.log(arr1)
+    let arr2 = xau2.split('');
+    console.log(arr2)
+    for(let i=0;i<arr2.length;i++){
+if(arr2.indexOf(arr1[i]) !=-1){
+    arr.push(arr1[i])
+}
+    }
+    console.log(arr)
+
+</script>
+</body>
+</html>

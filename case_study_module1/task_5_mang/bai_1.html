@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 1</title>
+</head>
+<body>
+<script>
+    let sum = 0;
+    let m = +prompt('nhập m từ bàn phím');
+    let n = +prompt('nhập n từ bàn phím');
+    let arr = [];
+    for (let i = 0; i < m; i++) {
+        arr[i] = []
+        for (let j = 0; j < n; j++) {
+            arr[i][j] = +prompt('nhập giá trị')
+            if (arr[i][j] % 2 == 0) {
+                sum = sum + arr[i][j]
+            }
+        }
+
+    }
+    console.log(arr)
+    console.log(sum)
+</script>
+</body>
+</html>
