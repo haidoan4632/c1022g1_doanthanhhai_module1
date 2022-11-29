@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+    let h = +prompt("Nhập chiều cao tam giác vuông cân");
+    for (let i = 1; i <= h; i++) {
+        for (let j = 1; j <= h; j++) {
+            if (j === 1 || i === h || i === j) {
+                document.write("*");
+                    } else {
+                        document.write("&nbsp" + "&nbsp");
+                    }
+            }
+            document.write("<br>");
+        }
+
+</script>
+</body>
+</html>

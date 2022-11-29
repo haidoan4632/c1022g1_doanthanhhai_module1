@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 1</title>
+</head>
+<body>
+<script>
+
+    let nhap = []
+    let n = +prompt('nhập dộ dài n của mảng');
+    let kiemtra =true;
+    for (let i = 0; i < n; i++) {
+        nhap[i] = +prompt('nhập mảng từ bàn phím');
+
+    }
+    document.write(nhap)
+    let hieu =nhap[1]-nhap[0];
+    for (let i = 1; i <nhap.length ; i++) {
+        if(hieu === (nhap[i]-nhap[i-1])){
+            kiemtra =true;
+        }else {
+            kiemtra =false
+
+        }
+    }
+    if (kiemtra){
+        console.log('OK')
+    }
+    else {
+        console.log('NO')
+    }
+
+</script>
+</body>
+</html>

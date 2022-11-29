@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<script>
+    let h = +prompt("Nhập chiều cao h: ");
+    let i, j;
+    let result = "";
+    for (i = 1; i <= h; i++) {
+        for (j = 0; j < h - i; j++) {
+            result = result + "&ensp;";
+        }
+        for (j = 1; j <= i; j++) result = result + "*";
+        for (j = 1; j <= i - 1; j++) result = result + "*";
+        result = result + "<br>";
+    }
+    document.write(result);
+
+</script>
+</body>
+</html>
+123456789   <br>
+123456789 <br>
+123456789 <br>
+123456789 <br>
+123456789 <br>

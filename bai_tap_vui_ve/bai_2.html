@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+
+<script>
+    let x = +prompt('nhập độ dài cạnh x');
+    let y = +prompt('nhập độ dài cạnh y');
+    let z = +prompt('nhập độ dài cạnh z');
+checkTriangle(x,y,z)
+    function checkTriangle(x, y, z) {
+        if (x <= 0 || y <= 0 || z <= 0) {
+            document.write('x,y,z không phải 3 cạnh của 1 tam giác');
+        } else if (x + y < z || x + z < y || y + z < x) {
+            document.write('x,y,z không phải 3 cạnh của 1 tam giác');
+        } else if (x * x + y * y === z * z || x * x + z * z === y * y || z * z + y * y === x * x) {
+            document.write('x,y,z là cạnh của 1 tam giác vuông');
+        }
+        else { document.write('x,y,z là các cạnh của 1 tam giác ')};
+    }
+</script>
+</body>
+</html>
